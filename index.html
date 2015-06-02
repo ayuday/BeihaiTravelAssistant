@@ -7,11 +7,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
 </head>
 <body>
-<header class="mui-bar mui-bar-nav">
+<header class="mui-bar mui-bar-nav home-bar">
 	<a class="mui-action-menu mui-icon mui-icon-bars mui-pull-left"></a>
-	<a class="mui-action-back mui-btn mui-btn-link mui-pull-right">关闭</a>
 	<h1 class="mui-title">北海商城首页</h1>
 </header>
 <!--底部-->
@@ -41,23 +41,25 @@
 	<!--幻灯片-->
 	<div id="slider" class="mui-slider">
 		<div class="mui-slider-group mui-slider-loop">
+			<!--支持循环，需要重复图片节点-->
 			<div class="mui-slider-item mui-slider-item-duplicate">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/yuantiao.jpg"></a>
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show04.jpg"></a>
 			</div>
 			<div class="mui-slider-item">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg"></a>
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show01.jpg"></a>
 			</div>
 			<div class="mui-slider-item">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/muwu.jpg"></a>
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show02.jpg"></a>
 			</div>
 			<div class="mui-slider-item">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/cbd.jpg"></a>
-			</div>
-			<div class="mui-slider-item">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/yuantiao.jpg"></a>
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show03.jpg"></a>
 			</div>
 			<div class="mui-slider-item mui-slider-item-duplicate">
-				<a href="#"><img src="http://dcloudio.github.io/mui/assets/img/shuijiao.jpg"></a>
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show04.jpg"></a>
+			</div>
+			<!--支持循环，需要重复图片节点-->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show01.jpg"></a>
 			</div>
 		</div>
 		<div class="mui-slider-indicator">
@@ -68,40 +70,197 @@
 		</div>
 	</div>
 	<!--end幻灯片-->
-	<div class="mui-content-padded">
-		<p>这是webview模式右滑导航示例，主页面和菜单在不同的webview中，
-			优点是支持菜单内容在多页面的复用，缺点是不支持拖动手势（跟手）；
-			当前页面为主界面，你可以在主界面放置任何内容；
-			 打开侧滑菜单有多种方式：
-			 1、在当前页面快速向右滑动（swipe）； 
-			 2、点击页面左上角的
-			<span class="mui-icon mui-icon-bars"></span> 图标；
-			 3、通过JS API触发（例如点击如下蓝色按钮体验）；
-			 <span class="android-only">4、Android手机按menu键；</span>
-		</p>
-		<p style="padding: 5px 20px;margin-bottom: 5px;">
-			<button id="show-btn" type="button" class="mui-btn mui-btn-primary mui-btn-block" style="padding: 10px;">
-				显示侧滑菜单
-			</button>
-		</p>
-		<p >侧滑菜单的移动动画，支持多种效果，切换如下选项体验不同动画效果：</p>
-	
+	<!--图标-->
+	<div id="Gallery" class="mui-slider">
+	<div class="mui-slider-group">
+		<div class="mui-slider-item">
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-home"><span class="mui-badge">5</span></span>
+						<div class="mui-media-body">
+							美食
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-sms"></span>
+						<div class="mui-media-body">
+							住宿
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-calendar"></span>
+						<div class="mui-media-body">
+							出行
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-chat"></span>
+						<div class="mui-media-body">
+							游玩
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-category"></span>
+						<div class="mui-media-body">
+							购物
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-map"></span>
+						<div class="mui-media-body">
+							娱乐
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-search"></span>
+						<div class="mui-media-body">
+							体验
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-phone"></span>
+						<div class="mui-media-body">
+							交通
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="mui-slider-item">
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-home"></span>
+						<div class="mui-media-body">
+							景点
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-sms"></span>
+						<div class="mui-media-body">
+							游记
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-calendar"></span>
+						<div class="mui-media-body">
+							美图
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-chat"></span>
+						<div class="mui-media-body">
+							视频
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-category"></span>
+						<div class="mui-media-body">
+							问答
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-map"></span>
+						<div class="mui-media-body">
+							注意
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-search"></span>
+						<div class="mui-media-body">
+							帮助
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					<a href="#">
+						<span class="mui-icon mui-icon-phone"></span>
+						<div class="mui-media-body">
+							投诉
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<form class="mui-input-group" style="margin-bottom: 15px;">
-		<div class="mui-input-row mui-radio">
-			<label>主界面移动、菜单不动</label>
-			<input name="style" type="radio" checked="" value="main-move">
+	<div class="mui-slider-indicator">
+		<div class="mui-indicator mui-active"></div>
+		<div class="mui-indicator"></div>
+	</div>
+	</div>
+	<!--end图标-->
+	
+	<div class="box">
+		<div class="ayu-wrap">
+			<div class="tit">美食</div>
+			<div class="ayu-group">
+				<div class="mui-col-xs-8 fl box-left">
+					<div class="ayu-small-box">
+						<a href="#">
+							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-1.jpg">
+							<span class="title">八仙过海海鲜锅</span>
+						</a>
+					</div>
+					<div class="ayu-small-box">
+						<a href="#">
+							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-2.jpg">
+							<span class="title">疯狂炒螺</span>
+						</a>
+					</div>
+					<div class="ayu-small-box">
+						<a href="#">
+							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-3.jpg">
+							<span class="title">疯狂炒螺</span>
+						</a>
+					</div>
+					<div class="ayu-small-box">
+						<a href="#">
+							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-4.jpg">
+							<span class="title">疯狂炒螺</span>
+						</a>
+					</div>
+				</div>
+				<div class="mui-col-xs-4 box-right fr">
+					<a href="#">
+						<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-5.jpg">
+						<span class="title">疯狂炒螺</span>
+					</a>
+				</div>
+			</div>
 		</div>
-		<div class="mui-input-row mui-radio">
-			<label>主界面不动、菜单移动</label>
-			<input name="style" type="radio" value="menu-move">
-		</div>
-		<div class="mui-input-row mui-radio mui-hidden" id="move-togger">
-			<label>整体移动</label>
-			<input name="style" type="radio" value="all-move">
-		</div>
-	</form>
+	</div>
+	
+	
 </div>
+<!--end mui-content-->
 <script src="js/mui.min.js"></script>
 <script>
 	var main,menu, mask = mui.createMask(_closeMenu);
@@ -121,12 +280,42 @@
 		beforeback: back
 	});
 	
+	/*=====幻灯片=====*/
 	var slider = mui("#slider");
 	slider.slider({
 		interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
 	});
 	
+	/*=====分页6宫格=====*/
+	mui.ready(function() {
+		var slider = document.getElementById('Gallery');
+		var group = slider.querySelector('.mui-slider-group');
+		var items = mui('.mui-slider-item', group);
+		//克隆第一个节点
+		var first = items[0].cloneNode(true);
+		first.classList.add('mui-slider-item-duplicate');
+		//克隆最后一个节点
+		var last = items[items.length - 1].cloneNode(true);
+		last.classList.add('mui-slider-item-duplicate');
 	
+		//处理是否循环逻辑，若支持循环，需支持两点：
+		//1、在.mui-slider-group节点上增加.mui-slider-loop类
+		//2、重复增加2个循环节点，图片顺序变为：N、1、2...N、1
+		function toggleLoop(loop) {
+			if (loop) {
+				group.classList.add('mui-slider-loop');
+				group.insertBefore(last, group.firstChild);
+				group.appendChild(first);
+			} else {
+				group.classList.remove('mui-slider-loop');
+				group.removeChild(first);
+				group.removeChild(last);
+			}
+		}
+	
+	});
+	
+/*=====侧滑导航=====*/
 	function back() {
 		if (showMenu) {
 			//菜单处于显示状态，返回键应该先关闭菜单,阻止主窗口执行mui.back逻辑；
@@ -302,7 +491,6 @@
 
 	 //点击左上角图标，打开侧滑菜单；
 	document.querySelector('.mui-icon-bars').addEventListener('tap', openMenu);
-	document.getElementById("show-btn").addEventListener('tap',openMenu);
 	 //在android4.4中的swipe事件，需要preventDefault一下，否则触发不正常
 	 //故，在dragleft，dragright中preventDefault
 	window.addEventListener('dragright', function(e) {
