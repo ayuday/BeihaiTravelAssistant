@@ -12,7 +12,7 @@
 <body>
 <header class="mui-bar mui-bar-nav home-bar">
 	<a class="mui-action-menu mui-icon mui-icon-bars mui-pull-left"></a>
-	<h1 class="mui-title">北海商城首页</h1>
+	<h1 class="mui-title">商城首页</h1>
 </header>
 <!--底部-->
 <footer class="mi-bar mui-bar-footer">
@@ -217,7 +217,7 @@
 	</div>
 	</div>
 	<!--end图标-->
-	
+	<!--5图格-->
 	<div class="box">
 		<div class="ayu-wrap">
 			<div class="tit">美食</div>
@@ -235,13 +235,13 @@
 							<span class="title">疯狂炒螺</span>
 						</a>
 					</div>
-					<div class="ayu-small-box">
+					<div class="ayu-small-box nob">
 						<a href="#">
 							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-3.jpg">
 							<span class="title">疯狂炒螺</span>
 						</a>
 					</div>
-					<div class="ayu-small-box">
+					<div class="ayu-small-box nob">
 						<a href="#">
 							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-4.jpg">
 							<span class="title">疯狂炒螺</span>
@@ -257,7 +257,60 @@
 			</div>
 		</div>
 	</div>
-	
+	<!--end5图格-->
+	<!--5图格-->
+	<div class="box">
+		<div class="ayu-wrap">
+			<div class="tit">美食</div>
+			<div class="ayu-group">
+				<div class="mui-col-xs-12 ayu-imgbox ayu-top">
+					<a href="#">
+							<img src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x160.jpg">
+							<span class="title">八仙过海海鲜锅</span>
+					</a>
+				</div>
+				<ul class="mui-table-view ayu-imgtxt-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+							<div class="mui-media-body">
+								幸福
+								<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+							<div class="mui-media-body">
+								木屋
+								<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+							<div class="mui-media-body">
+								CBD
+								<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+							<div class="mui-media-body">
+								木屋
+								<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--end5图格-->
 	
 </div>
 <!--end mui-content-->
@@ -266,14 +319,6 @@
 	var main,menu, mask = mui.createMask(_closeMenu);
 	var showMenu = false,mode = 'main-move';
 	 
-	if (!mui.os.android) {
-		//整体滑动暂不支持android手机，因为两个页面的移动动画，无法保证同步性；
-		document.getElementById("move-togger").classList.remove('mui-hidden');
-		var spans = document.querySelectorAll('.android-only');
-		for (var i=0,len=spans.length;i<len;i++) {
-			spans[i].style.display = "none";
-		}
-	}
 
 	mui.init({
 		swipeBack: false,

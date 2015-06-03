@@ -21,27 +21,34 @@ a,img{padding: 0;margin: 0;}
 .ayu-wrap{padding: 5px;}
 
 .tit{height: 30px; line-height: 30px; color: #666; padding-left: 5px;font-size: 13px;}
+
 .ayu-group{clear: both;overflow: hidden;zoom: 1;}
-.ayu-group img{width: 100%;height: 100%;display: block;}
+.ayu-group .ayu-small-box img,.ayu-group .box-right img{width: 100%;height: auto;display: block;}
 .fl{float: left;}
 .fr{float: right;}
 .ayu-group .mui-col-xs-8{margin: 0 -1%;}
-.box-left .mui-col-xs-6{float: left;margin-right: 1%;}
-.box-left .ayu-small-box{margin-right: 0 2%;width: 48%;float:left;margin-right: 2%;margin-bottom: 2%;}
+.box-left .mui-col-xs-6{float: left;}
+.box-left .ayu-small-box{margin-right: 0 2%;width: 48%;float:left;margin:0 1%;margin-bottom: 2%;}
+.box-left .ayu-small-box.nob{margin-bottom: 0;}
 .box-left .ayu-small-box a{display: block;}
 
 .ayu-group .box-left{width:67.66666667%}
-.ayu-group .box-right img{height: 98%;}
 
 .ayu-small-box{position: relative;}
-.ayu-small-box .title{display:block;width:100%;position: absolute;left: 0;bottom: 0;font-size: 12px;line-height: 22px;background:url('../images/backbg.png') bottom repeat-x;color: #FFFFFF;padding-left: 10px;}
+.ayu-small-box .title,.ayu-imgbox .title{padding-left: 8px;display:block;width:100%;position: absolute;left: 0;bottom: 0;font-size: 12px;line-height: 22px;background:url('../images/backbg.png') bottom repeat-x;color: #FFFFFF;}
+
 .box-right .title{display:block;width:100%;position: absolute;left: 0;bottom: 0;font-size: 12px;line-height: 22px;background:url('../images/backbg.png') bottom repeat-x;color: #FFFFFF;padding-left: 10px;}
-.box-right{position: relative;}
 
+.ayu-group .box-right{position: relative;width:33.63333333%;margin-right: -1%;margin-top:-1%;overflow: hidden;zoom: 1;}
 
+.ayu-top{margin-bottom: 8px;}
+.ayu-imgbox{position: relative;}
+.ayu-imgbox img{display: block;}
 
-
-
+.ayu-imgtxt-view .mui-table-view-cell,.ayu-imgtxt-view .mui-table-view-cell a{padding-left: 0;padding-right: 0;}
+.ayu-imgtxt-view .mui-table-view-cell a{margin-left: 0;margin-right:0;}
+.ayu-imgtxt-view .mui-table-view-cell:after{left: 0;}
+.ayu-imgtxt-view .mui-media-object{max-width:120px}
 
 
 
