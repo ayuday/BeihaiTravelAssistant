@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+<!--测试阶段引入-->
+<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1433474724_238987.css"/>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav ayu-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">购物车(4)</h1>
+</header>
+<footer class="mi-bar mui-bar-footer jiesuan mui-input-group">
+	<div class="mui-input-row mui-checkbox mui-left">
+		<label>全选</label>
+		<input name="checkbox" id="checkall" type="checkbox">
+	</div>
+	<div class="pricebox">
+		合计：
+		<span id="allprice">¥ 149.9</span>
+	</div>
+	<span id="jie-btn">结算(<em id="allnum">0</em>)</span>
+</footer>
+<!--底部-->
+<footer class="mi-bar mui-bar-footer">
+	<nav class="mui-bar mui-bar-tab">
+	  <a class="mui-tab-item" href="#tabbar">
+			<span class="mui-icon iconfont icon-shouye"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-chat">
+			<span class="mui-icon iconfont icon-shouyezhuyetubiao05"></span>
+			<span class="mui-tab-label">搜索</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-chat">
+			<span class="mui-icon iconfont icon-huodong"></span>
+			<span class="mui-tab-label">活动</span>
+		</a>
+		<a class="mui-tab-item" href="#tabbar-with-sms">
+			<span class="mui-icon iconfont icon-shoucang"></span>
+			<span class="mui-tab-label">收藏</span>
+		</a>
+		<a class="mui-tab-item mui-active" href="#tabbar-with-sms">
+			<span class="mui-icon iconfont icon-gouwuche"></span>
+			<span class="mui-tab-label">购物</span>
+		</a>
+		<a class="mui-tab-item" id="usercenter" href="register.html">
+			<span class="mui-icon iconfont icon-wode"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+</footer>
+<!--end底部-->
+<div class="mui-content">
+	<div class="mui-content-padded">
+		<form class="mui-input-group cart-form">
+		<ul class="cart-list">
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+			<li>
+				<div class="good-buy">
+					<div class="mui-input-row mui-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox">
+					</div>
+					<span class="good-del iconfont icon-shanchu"></span>
+					<a href="#" class="liuliang">产品详情</a>
+				</div>
+				<div class="good-info">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
+					<h5>八仙过海海鲜锅</h5>
+					<span class="price">¥ 49.9</span>
+					<span class="numbox">x 1</span>
+					<span class="selectbox"><em class="sub">-</em><input type="hidden" name="num" value="1" /><em class="add">+</em></span>
+				</div>
+			</li>
+		</ul>
+		</form>
+	</div>
+</div>
+<!--end mui-content-->
+<script src="js/mui.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: true,
+	});
+	
+	;(function($){
+	 	
+	 	
+	 	$('.selectbox .sub').click(function(){
+	 		//减少
+	 		var showNum = $(this).parents('.good-info').children('.numbox');
+			var o=$(this).next();
+			var curNum = parseInt(o.val());
+			if(curNum<2)return false;
+			if(curNum <= 0){curNum = 0;return false;}
+			var stext = curNum-1
+			showNum.text('x '+stext);
+			o.attr('value',curNum-1);
+		});
+		
+		$('.selectbox .add').click(function(){
+			//增加
+			var showNum = $(this).parents('.good-info').children('.numbox');
+			var curNum = parseInt($(this).prev().val());
+			if(curNum >= 999){return false;}
+			var stext = curNum+1
+			showNum.text('x '+stext);
+			$(this).prev().attr('value',curNum+1);
+		});
+	 	
+	 	$('.good-del').on('click',function(){
+	 		$(this).parents('li').remove();
+	 	})
+	 	
+	 	$("input[name='checkbox[]']").click(function(){
+	 		$('#checkall').attr("checked",false).removeAttr("checked");
+	 	})
+	 	//选择全部
+	 	$('#checkall').on('click',function(){
+	 		if($(this).attr('checked')==true){
+	 			var allnum = $("input[name='checkbox[]']").size();
+	 			$('#allnum').text(allnum);
+	 			$("input[name='checkbox[]']").each(function(){
+	 				$(this).attr("checked",'checked');
+	 			});
+	 		}else{
+	 			$("input[name='checkbox[]']").each(function(){
+	 				$('#allnum').text('0');
+	 				$(this).attr("checked",false);
+	 				$(this).removeAttr("checked");
+	 			});
+	 		}
+	 	});
+	 	
+	})(Zepto)
+    
+</script>
+</body>
+</html>

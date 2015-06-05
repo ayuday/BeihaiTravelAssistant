@@ -3,9 +3,13 @@
  * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
  * 
  * */
-.mui-android .mui-bar-nav~.mui-content{
+html,body,*{font-family: "微软雅黑";}
+body{background-color: #efeff4/*#f0f0f0;*/}
+a,img{padding: 0;margin: 0;}
+*{list-style: none;}
+/*.mui-android .mui-bar-nav~.mui-content{
 	padding: 0;
-}
+}*/
 @font-face {font-family: "iconfont";
   src: url('../fonts/iconfont.eot'); /* IE9*/
   src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -13,10 +17,63 @@
   url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fuwu:before { content: "\e606"; }
+.icon-sina:before { content: "\e62b"; }
+.icon-shigantiyantu:before { content: "\e620"; }
+.icon-shezhi:before { content: "\e600"; }
+.icon-circularjingxiaoshang:before { content: "\e61b"; }
+.icon-fayouji:before { content: "\e613"; }
+.icon-pic:before { content: "\e61c"; }
+.icon-shouye:before { content: "\e611"; }
+.icon-menpiao:before { content: "\e623"; }
+.icon-shouye1:before { content: "\e612"; }
+.icon-geren:before { content: "\e608"; }
+.icon-time:before { content: "\e601"; }
+.icon-llalbumscamarabtn:before { content: "\e614"; }
+.icon-qq:before { content: "\e62c"; }
+.icon-weixin1:before { content: "\e62d"; }
+.icon-shijian:before { content: "\e602"; }
+.icon-shangpinliebiaopress:before { content: "\e628"; }
+.icon-saoyisaoqupiaoma:before { content: "\e624"; }
+.icon-shouyezhuyetubiao05:before { content: "\e609"; }
+.icon-caidanyingyong1:before { content: "\e607"; }
+.icon-quanzhuyi:before { content: "\e629"; }
+.icon-wenjianshipin:before { content: "\e61d"; }
+.icon-yijianfankui:before { content: "\e61e"; }
+.icon-qitapiao:before { content: "\e625"; }
+.icon-youhuipiao:before { content: "\e626"; }
+.icon-huodong:before { content: "\e60a"; }
+.icon-iconsousuo:before { content: "\e60b"; }
+.icon-ticket:before { content: "\e627"; }
+.icon-wode:before { content: "\e60f"; }
+.icon-gouwuche:before { content: "\e60c"; }
+.icon-shouji:before { content: "\e603"; }
+.icon-gouwuchezhinan:before { content: "\e615"; }
+.icon-shouji1:before { content: "\e604"; }
+.icon-lvyou:before { content: "\e616"; }
+.icon-ktv:before { content: "\e621"; }
+.icon-jingcaihuodong:before { content: "\e622"; }
+.icon-shangjiashangpin:before { content: "\e62a"; }
+.icon-help:before { content: "\e617"; }
+.icon-meishi:before { content: "\e618"; }
+.icon-jiudian:before { content: "\e619"; }
+.icon-wode1:before { content: "\e610"; }
+.icon-feiji:before { content: "\e61a"; }
+.icon-canpinhuigerenzhongxinyijianyujianyi:before { content: "\e61f"; }
+.icon-shoucang:before { content: "\e60d"; }
+.icon-zhuye:before { content: "\e60e"; }
+.icon-shezhi1:before { content: "\e605"; }
 
-html,body,*{font-family: "微软雅黑";}
-body{background-color: #f0f0f0;}
-a,img{padding: 0;margin: 0;}
+
+
 .mui-bar-nav{  -webkit-box-shadow: 0 0px 0px #ccc; box-shadow: 0 0px 0px #ccc}
 .home-bar{background-color: #019FE6;}
 .home-bar,.home-bar *{color: #FFFFFF;}
@@ -75,63 +132,55 @@ a,img{padding: 0;margin: 0;}
 .ayu-imgtxt-view .mui-media-object{max-width:120px}
 
 
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-fuwu:before { content: "\e606"; }
-.icon-shigantiyantu:before { content: "\e620"; }
-.icon-shezhi:before { content: "\e600"; }
-.icon-circularjingxiaoshang:before { content: "\e61b"; }
-.icon-fayouji:before { content: "\e613"; }
-.icon-pic:before { content: "\e61c"; }
-.icon-shouye:before { content: "\e611"; }
-.icon-menpiao:before { content: "\e623"; }
-.icon-shouye1:before { content: "\e612"; }
-.icon-geren:before { content: "\e608"; }
-.icon-time:before { content: "\e601"; }
-.icon-llalbumscamarabtn:before { content: "\e614"; }
-.icon-shijian:before { content: "\e602"; }
-.icon-shangpinliebiaopress:before { content: "\e628"; }
-.icon-saoyisaoqupiaoma:before { content: "\e624"; }
-.icon-shouyezhuyetubiao05:before { content: "\e609"; }
-.icon-caidanyingyong1:before { content: "\e607"; }
-.icon-quanzhuyi:before { content: "\e629"; }
-.icon-wenjianshipin:before { content: "\e61d"; }
-.icon-yijianfankui:before { content: "\e61e"; }
-.icon-qitapiao:before { content: "\e625"; }
-.icon-youhuipiao:before { content: "\e626"; }
-.icon-huodong:before { content: "\e60a"; }
-.icon-iconsousuo:before { content: "\e60b"; }
-.icon-ticket:before { content: "\e627"; }
-.icon-wode:before { content: "\e60f"; }
-.icon-gouwuche:before { content: "\e60c"; }
-.icon-shouji:before { content: "\e603"; }
-.icon-gouwuchezhinan:before { content: "\e615"; }
-.icon-shouji1:before { content: "\e604"; }
-.icon-lvyou:before { content: "\e616"; }
-.icon-ktv:before { content: "\e621"; }
-.icon-jingcaihuodong:before { content: "\e622"; }
-.icon-shangjiashangpin:before { content: "\e62a"; }
-.icon-help:before { content: "\e617"; }
-.icon-meishi:before { content: "\e618"; }
-.icon-jiudian:before { content: "\e619"; }
-.icon-wode1:before { content: "\e610"; }
-.icon-feiji:before { content: "\e61a"; }
-.icon-canpinhuigerenzhongxinyijianyujianyi:before { content: "\e61f"; }
-.icon-shoucang:before { content: "\e60d"; }
-.icon-zhuye:before { content: "\e60e"; }
-.icon-shezhi1:before { content: "\e605"; }
+/*用户注册*/
+.mui-input-row{position: relative;}
+.ayu-nav{border-bottom: 1px solid #ddd;}
+.mui-input-row .mui-btn#mobile-data{position: absolute;width: auto;right: 10px;top:5px;padding: 5px 10px;}
+.mui-input-row .mui-btn.sending{background-color: #C1C1C1;border-color: #C1C1C1;cursor: not-allowed;}
+
+.mui-content{background-color: none;}
+.other-login{margin-top: 20px;}
+.other-login .mui-grid-view.mui-grid-9,.other-login{border-bottom: none;background: none;}
+.other-login .mui-grid-view.mui-grid-9 .mui-table-view-cell{padding:10px 0px 10px 0px}
+.other-login .mui-table-view{position: static;}
+.ayu-input-group{position: static;}
+.mui-input-group .mui-input-row:after{left: 0;background-color: #D5D5D5;}
+.ayu-input-group .mui-input-row label{font-size: 14px;width: 35%;padding: 10px 10px 10px 15px;}
+.ayu-input-group .mui-input-row input{font-size: 14px;}
 
 
+/*购物车*/
+.cart-list{padding: 0px;margin-bottom: 60px;}
+.cart-list em{font-style: normal;}
+.good-info img{width: 80px;height: 60px;margin-right: 10px;float: left;}
+.cart-list li{overflow: hidden;zoom: 1;padding-bottom: 8px;margin-bottom: 10px;background-color: #ffffff;}
+.cart-list .mui-checkbox.mui-left input[type=checkbox],.cart-list .mui-radio.mui-left input[type=radio]{left: 8px;}
 
+.good-buy{position:relative;}
+.iconfont.good-del{font-size: 28px;color: #737383;position: absolute;right: 2px;top: 8px;}
+.price{color: #f60;}
 
+.liuliang:after{content: '\e583';font-family:Muiicons}
+.cart-list .good-buy .liuliang{position: absolute;left: 40%;top: 7px;}
 
+.good-info{position: relative;height: 68px;padding: 8px;}
 
+.good-info .selectbox{position: absolute;right: 8px;bottom: 0px;}
+.good-info .price{position: absolute;left: 100px;bottom: 0;}
+.good-info .numbox{position: absolute;bottom: 0px;left: 155px;color: #999;font-size: 14px;}
 
+.mui-input-group .selectbox input{width: 50px;color: #999;padding: 0;text-align: center;height: 23px;border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;font-size: 14px;position: relative;top: -1px;font-weight: normal;}
+.selectbox .add,.selectbox .sub{border: 1px solid #ddd;width: 25px;display: inline-block;text-align: center;}
+.selectbox .add{border-left:none;}
 
+.mui-input-group.cart-form{background-color:#EFEFF4;}
+
+.jiesuan{position:fixed;bottom: 50px;left: 0;z-index: 10;background-color: #ffffff;width: 100%;height: 40px;padding: 5px 10px;}
+
+.jiesuan .mui-left{position: absolute;top: 5px;left: 0px;}
+.pricebox{position: absolute;left: 130px;top: 10px;}
+#allprice{color: #FF6600;}
+
+#jie-btn{background-color:#FD4E00;color: #ffffff;line-height:40px;height: 40px;padding: 0px 10px;position: absolute;right: 0;top: 0;}
+#jie-btn em{font-style: normal;line-break: 40px;}
 

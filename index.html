@@ -39,7 +39,7 @@
 			<span class="mui-icon iconfont icon-gouwuche"></span>
 			<span class="mui-tab-label">购物</span>
 		</a>
-		<a class="mui-tab-item" href="#tabbar-with-map">
+		<a class="mui-tab-item" id="usercenter" href="register.html">
 			<span class="mui-icon iconfont icon-wode"></span>
 			<span class="mui-tab-label">我的</span>
 		</a>
@@ -569,6 +569,20 @@
 			openMenu();
 		}
 	}
+	
+	
+	/**
+	 * 打开子页面
+	 */
+	
+	document.getElementById('usercenter').addEventListener('tap', function() {
+		//打开关于页面注册页面
+	  	mui.openWindow({
+	    	url: 'register.html', 
+	    	id:'register'
+	  	});
+	});
+    	
 </script>
 </body>
 </html>

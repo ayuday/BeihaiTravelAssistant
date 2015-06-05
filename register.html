@@ -9,34 +9,105 @@
 <link rel="stylesheet" href="css/mui.min.css">
 <link rel="stylesheet" type="text/css" href="css/app.css"/>
 <!--测试阶段引入-->
-<!--<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1433388674_0008063.css"/>-->
+<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1433468253_14416.css"/>
 </head>
 <body>
-<header class="mui-bar mui-bar-nav home-bar">
-	<a class="mui-action-menu mui-icon mui-icon-bars mui-pull-left"></a>
-	<h1 class="mui-title">商城首页</h1>
+<header class="mui-bar mui-bar-nav ayu-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">用户注册</h1>
 </header>
-
 	
 <div class="mui-content">
-	
+	<div class="mui-content-padded">
+		<form class="mui-input-group ayu-input-group">
+			<div class="mui-input-row">
+				<label>手机号</label>
+				<input type="text" placeholder="普通输入框">
+			</div>
+			<div class="mui-input-row">
+				<label>手机验证码</label>
+				<input type="text" class="mui-input-clear" placeholder="手机验证码">
+				<p class="mui-btn mui-btn-primary" id="mobile-data">获取验证码</p>
+			</div>
+			<div class="mui-input-row">
+				<label>密码</label>
+				<input type="password" class="mui-input-clear" placeholder="设置密码">
+			</div>
+			<div class="mui-input-row">
+				<label>确认密码</label>
+				<input type="password" class="mui-input-clear" placeholder="重复输入密码">
+			</div>
+			<div class="mui-button-row">
+				<button class="mui-btn mui-btn-primary" onclick="return false;">确认</button>&nbsp;&nbsp;
+				<button class="mui-btn mui-btn-primary" onclick="return false;">取消</button>
+			</div>
+		</form>
+		
+		<div class="other-login">
+			<h5>其他登陆</h5>
+			<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-3">
+				<a href="#">
+					<span class="mui-icon iconfont icon-qq blue"></span>
+					<div class="mui-media-body">QQ</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3">
+				<a href="#tabbar">
+					<span class="mui-icon iconfont icon-weixin1 green"></span>
+					<div class="mui-media-body">微信</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3">
+				<a href="#tabbar">
+					<span class="mui-icon iconfont icon-sina red"></span>
+					<div class="mui-media-body">新浪</div>
+				</a>
+			</li>
+			</ul>
+		</div>
+	</div>
 	
 </div>
 <!--end mui-content-->
 <script src="js/mui.min.js"></script>
 <script>
-	var main,menu, mask = mui.createMask(_closeMenu);
-	var showMenu = false,mode = 'main-move';
 	 
-
 	mui.init({
 		swipeBack: false,
-		beforeback: back
 	});
+	var send = 0;
+	var t;
+	var  mobileBtn = document.getElementById("mobile-data");
+	mobileBtn.addEventListener("click",showcode);
 	
+	function showcode(){
+		if(send==0){
+			mobileBtn.setAttribute('class','mui-btn mui-btn-primary sending');
+			mobileBtn.innerHTML='已发送(<span id="timers">60</span>)';
+			t=setTimeout("timedCount()",1000);
+			
+			//验证发送方法
+			//....
+		}
+	}
 	
-	
-	
+	//倒讲时
+    function timedCount()  {
+        var tim=document.getElementById("timers");
+        var time=parseInt(tim.innerHTML);
+        document.getElementById("timers").innerHTML = time;
+        if( t !=null && time==0){
+        	send==1;
+        	mobileBtn.setAttribute('class','mui-btn mui-btn-primary');
+        	mobileBtn.innerHTML='重新获取';
+        	clearTimeout(t);return;
+        }
+        time--;
+        tim.innerHTML = time;
+        t=setTimeout("timedCount()",1000)
+    }
+    
 </script>
 </body>
 </html>
