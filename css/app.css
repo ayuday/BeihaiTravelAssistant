@@ -177,10 +177,18 @@ a,img{padding: 0;margin: 0;}
 
 .jiesuan{position:fixed;bottom: 50px;left: 0;z-index: 10;background-color: #ffffff;width: 100%;height: 40px;padding: 5px 10px;}
 
-.jiesuan .mui-left{position: absolute;top: 5px;left: 0px;}
+.jiesuan .mui-left{position: absolute;top: 0px;left: 10px;}
 .pricebox{position: absolute;left: 130px;top: 10px;}
 #allprice{color: #FF6600;}
 
 #jie-btn{background-color:#FD4E00;color: #ffffff;line-height:40px;height: 40px;padding: 0px 10px;position: absolute;right: 0;top: 0;}
 #jie-btn em{font-style: normal;line-break: 40px;}
+
+/*自定义购物车checkbox*/
+.ayu-checkbox input[type=checkbox]:before {content: "\e411";font-family: Muiicons;  font-size: 28px;  font-weight: 400;  line-height: 1;  color: #aaa;  text-decoration: none;  background: 0 0;  border-radius: 0;  -webkit-font-smoothing: antialiased;  }
+.ayu-checkbox input[type=checkbox]{position: absolute;  top: 4px;  left: 8px;  display: inline-block;  width: 28px;  height: 26px;  -webkit-appearance: none;  background-color: transparent;  border: 0;  outline: 0!important;}
+.ayu-checkbox input[type=checkbox].checked:before{	color: #007aff;	content: "\e442";}
+.ayu-checkbox.mui-left label{ padding-right: 15px;  padding-left: 58px;display: inline-block;
+  float: none;padding: 10px 15px 10px 40px;  width: 100%;}
+
 

@@ -17,9 +17,9 @@
 	<h1 class="mui-title">购物车(4)</h1>
 </header>
 <footer class="mi-bar mui-bar-footer jiesuan mui-input-group">
-	<div class="mui-input-row mui-checkbox mui-left">
+	<div class="mui-input-row ayu-checkbox mui-left">
 		<label>全选</label>
-		<input name="checkbox" id="checkall" type="checkbox">
+		<input name="checkboxall" id="checkall" type="checkbox">
 	</div>
 	<div class="pricebox">
 		合计：
@@ -63,8 +63,9 @@
 		<ul class="cart-list">
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
-						<input name="checkbox[]" type="checkbox">
+					<div class="mui-input-row ayu-checkbox mui-left">
+						<input name="checkbox[]" type="checkbox" class="checked" checked="checked">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -79,8 +80,9 @@
 			</li>
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
+					<div class="mui-input-row ayu-checkbox mui-left">
 						<input name="checkbox[]" type="checkbox">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -95,8 +97,9 @@
 			</li>
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
+					<div class="mui-input-row ayu-checkbox mui-left">
 						<input name="checkbox[]" type="checkbox">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -111,8 +114,9 @@
 			</li>
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
+					<div class="mui-input-row ayu-checkbox mui-left">
 						<input name="checkbox[]" type="checkbox">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -127,8 +131,9 @@
 			</li>
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
+					<div class="mui-input-row ayu-checkbox mui-left">
 						<input name="checkbox[]" type="checkbox">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -143,8 +148,9 @@
 			</li>
 			<li>
 				<div class="good-buy">
-					<div class="mui-input-row mui-checkbox mui-left">
+					<div class="mui-input-row ayu-checkbox mui-left">
 						<input name="checkbox[]" type="checkbox">
+						<input type="hidden" name="price" value="49.9" />
 					</div>
 					<span class="good-del iconfont icon-shanchu"></span>
 					<a href="#" class="liuliang">产品详情</a>
@@ -182,6 +188,7 @@
 			var stext = curNum-1
 			showNum.text('x '+stext);
 			o.attr('value',curNum-1);
+			all_price()
 		});
 		
 		$('.selectbox .add').click(function(){
@@ -192,31 +199,56 @@
 			var stext = curNum+1
 			showNum.text('x '+stext);
 			$(this).prev().attr('value',curNum+1);
+			all_price()
 		});
-	 	
+		//删除商品
 	 	$('.good-del').on('click',function(){
 	 		$(this).parents('li').remove();
+	 		all_price();
 	 	})
-	 	
+		//选中某一商品
 	 	$("input[name='checkbox[]']").click(function(){
-	 		$('#checkall').attr("checked",false).removeAttr("checked");
+	 		if($(this).attr('checked')=='true'||$(this).attr('checked')=='checked'){
+	 			$(this).attr("checked",false).removeAttr("checked").removeClass('checked');
+	 			$('#checkall').attr("checked",false).removeAttr("checked").removeClass('checked');
+	 		}else{
+	 			$(this).attr("checked",'checked').addClass("checked");
+	 		}
+	 		all_price()
 	 	})
-	 	//选择全部
+	 	//选择取消全部
 	 	$('#checkall').on('click',function(){
-	 		if($(this).attr('checked')==true){
+	 		if($(this).attr('checked')=='true'||$(this).attr('checked')=='checked'){
+	 			$(this).removeClass('checked').removeAttr('checked',false);
+	 			$("input[name='checkbox[]']").each(function(){
+	 				$('#allnum').text('0');
+	 				$(this).attr("checked",false).removeClass('checked');
+	 				$(this).removeAttr("checked");
+	 			});
+	 		}else{
+	 			$(this).addClass('checked').attr('checked','checked');
 	 			var allnum = $("input[name='checkbox[]']").size();
 	 			$('#allnum').text(allnum);
 	 			$("input[name='checkbox[]']").each(function(){
-	 				$(this).attr("checked",'checked');
-	 			});
-	 		}else{
-	 			$("input[name='checkbox[]']").each(function(){
-	 				$('#allnum').text('0');
-	 				$(this).attr("checked",false);
-	 				$(this).removeAttr("checked");
+	 				$(this).addClass('checked').attr("checked",'checked');
 	 			});
 	 		}
+	 		all_price()
 	 	});
+	 	
+	 	//统计价格
+	 	function all_price(){
+	 		var allprice=0;
+	 		$('.cart-list li').each(function(){
+	 			if($(this).find("input[name='checkbox[]']").attr('checked')=='checked'){
+	 				var p = $(this).find("input[name='price']").val();
+	 				var n = $(this).find("input[name='num']").val();
+	 				allprice += p*n;
+	 				console.log(allprice)
+	 			}
+	 		})
+	 		$("#allprice").text('¥'+allprice)
+	 	}	
 	 	
 	})(Zepto)
     
