@@ -1,0 +1,33 @@
+(function($){
+		$('.mui-scroll-drop').scroll({
+			indicators: true //是否显示滚动条
+		});
+		
+		//下拉筛选分类
+		$('.tab').on('tap', 'a', function(e) {
+			mask.show();//显示遮罩
+		});
+		
+		var mask = mui.createMask(colse);//callback为用户点击蒙版时自动执行的回调；
+		
+		//关闭下拉菜单
+		function colse(){
+			console.log('ccc');
+			//document.querySelector(".mui-control-item.mui-active").classList.remove('mui-active');
+			document.getElementById('item1').classList.remove('mui-active');
+			document.getElementById('item2').classList.remove('mui-active');
+			document.getElementById('item3').classList.remove('mui-active');
+			document.getElementById('item4').classList.remove('mui-active');
+		}
+		
+		//下拉菜单筛选点击业务
+		$('.drop-list').on('tap', 'a', function(){
+			document.body.querySelector(".mui-active").classList.remove('mui-active');
+			document.body.querySelector(".mui-control-content").classList.remove('mui-active');
+			//colse();
+			mask.close();
+			//ajax加载数据
+			console.log('jax');
+		});
+		
+	})(mui);

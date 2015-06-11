@@ -7,6 +7,8 @@
 		.iphone{background: url('images/device-sprite.png') 0 0 no-repeat;background-size: 100%;width: 395px;  height: 813px;position: relative;}
 		body{position: relative;overflow: hidden;}
 		.iphonebox{width:320px;height: 570px;position: absolute;top: 116px;left: 37px;overflow:hidden;zoom:1}
+		.list{position: absolute;top:50px;left: 500px}
+		.list li{line-height: 30px}
 /*滚动条*/
 ::-webkit-scrollbar{width:2px;height:12px}
 ::-webkit-scrollbar-button:vertical{display:none}
@@ -24,5 +26,10 @@
 			<iframe src="index.html" width="318" height="570"></iframe>
 		</div>
 	</div>
+	<ul class="list">
+		<li><a href="index.html" target="main">首页</a></li>
+		<li><a href="cart.html" target="main">购物车</a>(含js业务数量增加，减小，删除，价格统计方法,ajax业务逻辑框架)</li>
+		<li><a href="cart.html" target="main">列表</a>(含手机手势上拉刷新数据，上拉加载数据，弹出层菜单筛选，jax业务逻辑)</li>
+	</ul>
 </body>
 </html>
