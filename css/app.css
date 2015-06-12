@@ -27,14 +27,19 @@ a,img,dl,dt,dd,ul,li,ol{padding: 0;margin: 0;}
 }
 .icon-fuwu:before { content: "\e606"; }
 .icon-shanchu:before { content: "\e62e"; }
+.icon-zhengque:before { content: "\e63d"; }
 .icon-sina:before { content: "\e62b"; }
 .icon-shigantiyantu:before { content: "\e620"; }
+.icon-address:before { content: "\e636"; }
+.icon-jiantoushang:before { content: "\e639"; }
+.icon-jiantouxia:before { content: "\e63a"; }
 .icon-shezhi:before { content: "\e600"; }
 .icon-minus:before { content: "\e62f"; }
 .icon-circularjingxiaoshang:before { content: "\e61b"; }
 .icon-fayouji:before { content: "\e613"; }
 .icon-pic:before { content: "\e61c"; }
 .icon-shouye:before { content: "\e611"; }
+.icon-dianhua:before { content: "\e637"; }
 .icon-menpiao:before { content: "\e623"; }
 .icon-shouye1:before { content: "\e612"; }
 .icon-geren:before { content: "\e608"; }
@@ -44,6 +49,7 @@ a,img,dl,dt,dd,ul,li,ol{padding: 0;margin: 0;}
 .icon-weixin1:before { content: "\e62d"; }
 .icon-shijian:before { content: "\e602"; }
 .icon-shangpinliebiaopress:before { content: "\e628"; }
+.icon-comment:before { content: "\e638"; }
 .icon-saoyisaoqupiaoma:before { content: "\e624"; }
 .icon-shouyezhuyetubiao05:before { content: "\e609"; }
 .icon-caidanyingyong1:before { content: "\e607"; }
@@ -61,6 +67,7 @@ a,img,dl,dt,dd,ul,li,ol{padding: 0;margin: 0;}
 .icon-shouji:before { content: "\e603"; }
 .icon-gouwuchezhinan:before { content: "\e615"; }
 .icon-shouji1:before { content: "\e604"; }
+.icon-liulan:before { content: "\e63b"; }
 .icon-jikediancanicon09:before { content: "\e631"; }
 .icon-lvyou:before { content: "\e616"; }
 .icon-ktv:before { content: "\e621"; }
@@ -70,14 +77,17 @@ a,img,dl,dt,dd,ul,li,ol{padding: 0;margin: 0;}
 .icon-meishi:before { content: "\e618"; }
 .icon-jiudian:before { content: "\e619"; }
 .icon-wode1:before { content: "\e610"; }
+.icon-fenxiang:before { content: "\e635"; }
 .icon-feiji:before { content: "\e61a"; }
 .icon-canpinhuigerenzhongxinyijianyujianyi:before { content: "\e61f"; }
 .icon-shoucang:before { content: "\e60d"; }
 .icon-zhuye:before { content: "\e60e"; }
 .icon-shezhi1:before { content: "\e605"; }
+.icon-722dianpingren:before { content: "\e63c"; }
 .icon-jia:before { content: "\e632"; }
 .icon-jian1:before { content: "\e633"; }
 .icon-plus:before { content: "\e634"; }
+
 
 
 .mui-bar-nav{  -webkit-box-shadow: 0 0px 0px #ccc; box-shadow: 0 0px 0px #ccc}
