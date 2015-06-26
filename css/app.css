@@ -90,7 +90,7 @@ a,img,dl,dt,dd,ul,li,ol{padding: 0;margin: 0;}
 
 
 
-.mui-bar-nav{  -webkit-box-shadow: 0 0px 0px #ccc; box-shadow: 0 0px 0px #ccc}
+.mui-bar-nav{  -webkit-box-shadow:none; box-shadow: none}
 .home-bar{background-color: #019FE6;}
 .home-bar,.home-bar *{color: #FFFFFF;}
 .box{background-color: #FFFFFF;border-top: 1px solid #EDEDED;border-bottom: 1px solid #EDEDED;margin-bottom: 8px;}
@@ -287,6 +287,55 @@ transform: rotate(45deg);
 .ayu-loading .loading-logo { position: absolute; top: 208px; left: 50%; margin-left: -24px; color: #33bd61; font-size: 40px; opacity: 0.8;width: 48px; height: 48px;}
 .ayu-loading .icon-logo{display:inline-block;background: url(../images/loading-logo.png);background-size: cover;width: 48px; height: 48px;}
 
+
+.ayu-ticket-view li{border-bottom: none;}
+
+.tecket-price{clear: both;}
+.tecket-price li{line-height: 24px;border-bottom: 1px solid #ededed;overflow: hidden;}
+.tecket-price li span.tit{line-height: 45px;}
+.tecket-price li .price{float: right;}
+.tecket-price li a{overflow: hidden;zoom: 1;display: block;}
+.tecket-price li span.price em{font-style: normal;font-size: 16px;line-height: 30px;}
+.tecket-price li a{color: #333;font-size: 12px;}
+.del{text-decoration: line-through;color: #999;font-size: 11px;font-style: normal;}
+.tecket-price li .del{display: block;line-height: 3px;}
+.ayu-ticket-view li .text h5{font-size: 16px;line-height: 35px;}
+.ayu-ticket-view li .text p{line-height: 22px;margin-bottom: 0;}
+.ayu-ticket-view>li {margin-bottom: 10px;background-color: #fff;padding-bottom: 0;}
+
+.ayu-nbg-list{background-color: transparent;padding: 0;}
+.ayu-nbg-list>ul.ayu-ticket-view>li{padding:10px 10px 0 10px;}
+
+
+
+/*门票详细*/
+.box-tit{color: #333;font-weight: bold;}
+
+.article p{color: #8f8f94;margin-bottom: 10px;}
+.article,.article *{color: #8f8f94;line-height: 24px;font-size: 12px;}
+.article img{max-width: 100%;}
+
+.titlebox .box-tit{border-bottom:1px solid #EDEDED;padding-left: 15px;font-size: 14px;line-height: 35px;}
+.titlebox .box-c{padding:5px 15px;line-height: 25px;font-size: 12px;color: #8f8f94;}
+.book-list{border-bottom: none;margin-bottom: 0;padding-bottom: 0;}
+.book-list>ul>li:last-child{border-bottom: none;}
+.book-list li .del{display:inline-block;padding-left: 5px;}
+.book-list ul li span.tit{line-height: 30px;}
+.book-list ul li{padding-right: 20px;position: relative;}
+.book-list ul li:after{font-family: Muiicons;content: '\e583';color: #bbb;position: absolute;right: 10px;top:3px;font-size: 18px;line-height: 30px;}
+.box .book-list li a{padding: 0 15px;}
+.box .book-list li .tit{padding-left: 0;}
+
+/*订单填写*/
+.booktitle{background-color: #fff;padding: 10px 15px;}
+.attention{color: #999;font-size: 12px;}
+
+
+.bookpay{color: #FF4500;padding: 10px 15px;line-height: 30px;}
+.bookpay em{font-style: normal;	font-size: 24px;}
+
+.button-confirm { background-color: #ff7800; color: #fff; width: 93%; height: 36px; margin: 10px}
+
 @-webkit-keyframes
 rotate {
   0% { -webkit-transform: rotate(0) }
@@ -317,6 +366,9 @@ rotate {
 
 @media (max-width: 767px) {
 	.product-list>ul>li { border-bottom: 1px solid #ededed; padding: 10px 0 5px 0;}
+	.ayu-nbg-list>ul>li{padding-bottom: 0;}
+	.product-list>ul.ayu-ticket-view li{border-bottom:transparent;}
+	.product-list>ul.ayu-ticket-view li .tecket-price li{border-bottom: 1px solid #ededed; }
 	.product-list>ul>li .item{position: relative;overflow: hidden;}
 	.product-list>ul>li .item .text .label { font-family: "Arial"; position: absolute; bottom: 1px;}
 	.product-list>ul>li>a{overflow: hidden;display: block;}
@@ -331,9 +383,12 @@ rotate {
 	  padding-top: 15px;}
 	.product-list>ul>li .item .img img { width: 100%; display: block;}
 	.product-list>ul>li {width: 33.33%; padding-right: 1.2%;padding-left:1.2%;padding-bottom: 10px; padding-top: 20px; float: left;border-bottom: 1px solid #ededed;}
+	
 }
 @media (min-width: 1024px){
 	.product-list>ul>li .item .img img{ width: 100%; display: block;}
 	.product-list>ul>li {width: 24.6%;padding-right: 1.2%;padding-left:1.8%; padding-bottom: 10px; padding-top: 20px; float: left;border-bottom: 1px solid #ededed;}
+	.product-list ul.ayu-ticket-view>li{margin:5px 5px 10px 5px;width: 24.3%;p}
+	.product-list ul.ayu-ticket-view>li:nth-child(5n){clear: both;}
 }
 

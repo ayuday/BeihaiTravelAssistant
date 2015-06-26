@@ -2,587 +2,191 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>商城首页</title>
+<title>旅游商城首页</title>
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="css/mui.min.css">
-<link rel="stylesheet" type="text/css" href="css/app.css"/>
-<!--测试阶段引入-->
-<!--<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1433388674_0008063.css"/>-->
+<link rel="stylesheet" href="css/app.css">
+<style type="text/css">
+	.mui-bar-nav{box-shadow:none}
+</style>
 </head>
 <body>
 <header class="mui-bar mui-bar-nav home-bar">
 	<a class="mui-action-menu mui-icon mui-icon-bars mui-pull-left"></a>
 	<h1 class="mui-title">商城首页</h1>
 </header>
-<!--底部-->
-<footer class="mi-bar mui-bar-footer">
-	<nav class="mui-bar mui-bar-tab">
-	  <a class="mui-tab-item" href="#tabbar">
-			<span class="mui-icon iconfont icon-shouye"></span>
-			<span class="mui-tab-label">首页</span>
-		</a>
-		<a class="mui-tab-item" href="#tabbar-with-chat">
-			<span class="mui-icon iconfont icon-shouyezhuyetubiao05"></span>
-			<span class="mui-tab-label">搜索</span>
-		</a>
-		<a class="mui-tab-item" href="#tabbar-with-chat">
-			<span class="mui-icon iconfont icon-huodong"></span>
-			<span class="mui-tab-label">活动</span>
-		</a>
-		<a class="mui-tab-item" href="#tabbar-with-sms">
-			<span class="mui-icon iconfont icon-shoucang"></span>
-			<span class="mui-tab-label">收藏</span>
-		</a>
-		<a class="mui-tab-item" href="#tabbar-with-sms">
-			<span class="mui-icon iconfont icon-gouwuche"></span>
-			<span class="mui-tab-label">购物</span>
-		</a>
-		<a class="mui-tab-item" id="usercenter" href="register.html">
-			<span class="mui-icon iconfont icon-wode"></span>
-			<span class="mui-tab-label">我的</span>
-		</a>
-	</nav>
-</footer>
-<!--end底部-->
-	
-<div class="mui-content">
-	<!--幻灯片-->
-	<div id="slider" class="mui-slider">
-		<div class="mui-slider-group mui-slider-loop">
-			<!--支持循环，需要重复图片节点-->
-			<div class="mui-slider-item mui-slider-item-duplicate">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show04.jpg"></a>
-			</div>
-			<div class="mui-slider-item">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show01.jpg"></a>
-			</div>
-			<div class="mui-slider-item">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show02.jpg"></a>
-			</div>
-			<div class="mui-slider-item">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show03.jpg"></a>
-			</div>
-			<div class="mui-slider-item mui-slider-item-duplicate">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show04.jpg"></a>
-			</div>
-			<!--支持循环，需要重复图片节点-->
-			<div class="mui-slider-item mui-slider-item-duplicate">
-				<a href="#"><img src="http://7xjffi.com1.z0.glb.clouddn.com/show01.jpg"></a>
-			</div>
-		</div>
-		<div class="mui-slider-indicator">
-			<div class="mui-indicator mui-active"></div>
-			<div class="mui-indicator"></div>
-			<div class="mui-indicator"></div>
-			<div class="mui-indicator"></div>
-		</div>
-	</div>
-	<!--end幻灯片-->
-	<!--图标-->
-	<div id="Gallery" class="mui-slider">
-	<div class="mui-slider-group">
-		<div class="mui-slider-item">
-			<ul class="mui-table-view mui-grid-view mui-grid-9">
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-meishi blue"></span>
-						<div class="mui-media-body">
-							美食
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-jiudian orange"></span>
-						<div class="mui-media-body">
-							住宿
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-feiji green"></span>
-						<div class="mui-media-body">
-							出行
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-llalbumscamarabtn purple"></span>
-						<div class="mui-media-body">
-							游玩
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-gouwuchezhinan red"></span>
-						<div class="mui-media-body">
-							购物
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-ktv pink"></span>
-						<div class="mui-media-body">
-							娱乐
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-menpiao orange2"></span>
-						<div class="mui-media-body">
-							门票
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-shigantiyantu green2"></span>
-						<div class="mui-media-body">
-							体验
-						</div>
-					</a>
-				</li>
-				
-			</ul>
-		</div>
-		<div class="mui-slider-item">
-			<ul class="mui-table-view mui-grid-view mui-grid-9">
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-lvyou orange3"></span>
-						<div class="mui-media-body">
-							景点
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-pic blue2"></span>
-						<div class="mui-media-body">
-							美图
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-wenjianshipin green"></span>
-						<div class="mui-media-body">
-							视频
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-fayouji purple"></span>
-						<div class="mui-media-body">
-							游记
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-circularjingxiaoshang pink"></span>
-						<div class="mui-media-body">
-							交通
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-quanzhuyi orange"></span>
-						<div class="mui-media-body">
-							注意
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-help blue"></span>
-						<div class="mui-media-body">
-							帮助
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-3">
-					<a href="#">
-						<span class="mui-icon iconfont icon-yijianfankui orange2"></span>
-						<div class="mui-media-body">
-							投诉
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="mui-slider-indicator">
-		<div class="mui-indicator mui-active"></div>
-		<div class="mui-indicator"></div>
-	</div>
-	</div>
-	<!--end图标-->
-	<!--5图格-->
-	<div class="box">
-		<div class="ayu-wrap">
-			<div class="tit">本地推荐</div>
-			<div class="ayu-group">
-				<div class="mui-col-xs-8 fl box-left">
-					<div class="ayu-small-box">
-						<a href="#">
-							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-1.jpg">
-							<span class="title">八仙过海海鲜锅</span>
-						</a>
-					</div>
-					<div class="ayu-small-box">
-						<a href="#">
-							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-2.jpg">
-							<span class="title">疯狂炒螺</span>
-						</a>
-					</div>
-					<div class="ayu-small-box nob">
-						<a href="#">
-							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-3.jpg">
-							<span class="title">疯狂炒螺</span>
-						</a>
-					</div>
-					<div class="ayu-small-box nob">
-						<a href="#">
-							<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-4.jpg">
-							<span class="title">疯狂炒螺</span>
-						</a>
-					</div>
-				</div>
-				<div class="mui-col-xs-4 box-right fr">
-					<a href="#">
-						<img src="http://7xjffi.com1.z0.glb.clouddn.com/thumb-400x400-5.jpg">
-						<span class="title">疯狂炒螺</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--end5图格-->
-	<!--5图格-->
-	<div class="box">
-		<div class="ayu-wrap">
-			<div class="tit">本地优惠</div>
-			<div class="ayu-group">
-				<div class="mui-col-xs-12 ayu-imgbox ayu-top">
-					<a href="#">
-							<img src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x160.jpg">
-							<span class="title">八仙过海海鲜锅</span>
-					</a>
-				</div>
-				<ul class="mui-table-view ayu-imgtxt-view">
-					<li class="mui-table-view-cell mui-media">
-						<a href="#">
-							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
-							<div class="mui-media-body">
-								幸福
-								<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
-							</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media">
-						<a href="#">
-							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
-							<div class="mui-media-body">
-								木屋
-								<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-							</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media">
-						<a href="#">
-							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
-							<div class="mui-media-body">
-								CBD
-								<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-							</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media">
-						<a href="#">
-							<img class="mui-media-object mui-pull-left" src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x200.jpg">
-							<div class="mui-media-body">
-								木屋
-								<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!--end5图格-->
-	
-</div>
-<!--end mui-content-->
-<script src="js/mui.min.js"></script>
-<script>
-	var main,menu, mask = mui.createMask(_closeMenu);
-	var showMenu = false,mode = 'main-move';
-	 
-
-	mui.init({
-		swipeBack: false,
-		beforeback: back
-	});
-	
-	/*=====幻灯片=====*/
-	var slider = mui("#slider");
-	slider.slider({
-		interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
-	});
-	
-	/*=====分页6宫格=====*/
-	mui.ready(function() {
-		var slider = document.getElementById('Gallery');
-		var group = slider.querySelector('.mui-slider-group');
-		var items = mui('.mui-slider-item', group);
-		//克隆第一个节点
-		var first = items[0].cloneNode(true);
-		first.classList.add('mui-slider-item-duplicate');
-		//克隆最后一个节点
-		var last = items[items.length - 1].cloneNode(true);
-		last.classList.add('mui-slider-item-duplicate');
-	
-		//处理是否循环逻辑，若支持循环，需支持两点：
-		//1、在.mui-slider-group节点上增加.mui-slider-loop类
-		//2、重复增加2个循环节点，图片顺序变为：N、1、2...N、1
-		function toggleLoop(loop) {
-			if (loop) {
-				group.classList.add('mui-slider-loop');
-				group.insertBefore(last, group.firstChild);
-				group.appendChild(first);
-			} else {
-				group.classList.remove('mui-slider-loop');
-				group.removeChild(first);
-				group.removeChild(last);
-			}
-		}
-	
-	});
-	
-/*=====侧滑导航=====*/
-	function back() {
-		if (showMenu) {
-			//菜单处于显示状态，返回键应该先关闭菜单,阻止主窗口执行mui.back逻辑；
-			closeMenu();
-			return false;
-		} else {
-			//菜单处于隐藏状态，执行返回时，要先close菜单页面，然后继续执行mui.back逻辑关闭主窗口；
-			menu.close('none');
-			return true;
-		}
-	}
-	
-	//plusReady事件后，自动创建menu窗口；
-	mui.plusReady(function() {
-		main = plus.webview.currentWebview();
-		//侧滑菜单默认隐藏，这样可以节省内存；
-		menu = mui.preload({
-			id: 'offcanvas-drag-right-plus-menu',
-			url: 'offcanvas-drag-right-plus-menu.html',
-			styles: {
-				left: 0,
-				width: '70%',
-				zindex: 9997
-			}
-		});
-	});
-	
-	/**
-	* 显示菜单菜单
-	*/
-	function openMenu() {
-		if (!showMenu) {
-			//侧滑菜单处于隐藏状态，则立即显示出来；
-			//显示完毕后，根据不同动画效果移动窗体；
-			menu.show('none', 0, function() {
-				switch (mode){
-					case 'main-move':
-						//主窗体开始侧滑；
+		<script src="js/mui.min.js"></script>
+		<script src="js/update.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var menu = null,
+				main = null;
+			var showMenu = false;
+			mui.init({
+				swipeBack: false,
+				statusBarBackground: '#019FE6',
+				gestureConfig: {
+					doubletap: true
+				},
+				subpages: [{
+					id: 'home',
+					url: 'home.html',
+					styles: {
+						top: '44px',
+						bottom: 0,
+						bounce: 'vertical'
+					}
+				}]
+			});
+			mui.plusReady(function() {
+				if (mui.os.android) {
+					plus.screen.lockOrientation("portrait-primary");
+				}
+				main = plus.webview.currentWebview();
+				main.addEventListener('maskClick', closeMenu);
+				//处理侧滑导航，为了避免和子页面初始化等竞争资源，延迟加载侧滑页面；
+				setTimeout(function() {
+					menu = mui.preload({
+						id: 'index-menu',
+						url: 'index-menu.html',
+						styles: {
+							left: 0,
+							width: '70%',
+							zindex: -1
+						},
+						show: {
+							aniShow: 'none'
+						}
+					});
+				}, 200);
+			});
+			var isInTransition = false;
+			/**
+			 * 显示侧滑菜单
+			 */
+			function openMenu() {
+				if (isInTransition) {
+					return;
+				}
+				if (!showMenu) {
+					//侧滑菜单处于隐藏状态，则立即显示出来；
+					isInTransition = true;
+					menu.setStyle({
+						mask: 'rgba(0,0,0,0)'
+					}); //menu设置透明遮罩防止点击
+					menu.show('none', 0, function() {
+						//主窗体开始侧滑并显示遮罩
 						main.setStyle({
+							mask: 'rgba(0,0,0,0.4)',
 							left: '70%',
 							transition: {
 								duration: 150
 							}
 						});
-						break;
-					case 'menu-move':
-						menu.setStyle({
-							left: '0%',
-							transition: {
-								duration: 150
-							}
-						});
-						break;
-					case 'all-move':
-						main.setStyle({
-							left: '70%',
-							transition: {
-								duration: 150
-							}
-						});
-						menu.setStyle({
-							left: '0%',
-							transition: {
-								duration: 150
-							}
-						});
-						break;
+						mui.later(function() {
+							isInTransition = false;
+							menu.setStyle({
+								mask: "none"
+							}); //移除menu的mask
+						}, 160);
+						showMenu = true;
+					});
+				}
+			};
+			/**
+			 * 关闭菜单
+			 */
+			function closeMenu() {
+				if (isInTransition) {
+					return;
+				}
+				if (showMenu) {
+					//关闭遮罩；
+					//主窗体开始侧滑；
+					isInTransition = true;
+					main.setStyle({
+						mask: 'none',
+						left: '0',
+						transition: {
+							duration: 200
+						}
+					});
+					showMenu = false;
+					//等动画结束后，隐藏菜单webview，节省资源；
+					mui.later(function() {
+						isInTransition = false;
+						menu.hide();
+					}, 300);
+				}
+			};
+			 //点击左上角侧滑图标，打开侧滑菜单；
+			document.querySelector('.mui-icon-bars').addEventListener('tap', function(e) {
+				if (showMenu) {
+					closeMenu();
+				} else {
+					openMenu();
 				}
 			});
-			//显示遮罩
-			mask.show();
-			showMenu = true;
-		}
-	}
-	/**
-	 * 关闭侧滑菜单
-	 */
-	function closeMenu () {
-		_closeMenu();
-		//关闭遮罩
-		mask.close();
-	}
-	
-	/**
-	 * 关闭侧滑菜单（业务部分）
-	 */
-	function _closeMenu() {
-		if (showMenu) {
-			//关闭遮罩；
-			switch (mode){
-				case 'main-move':
-					//主窗体开始侧滑；
-					main.setStyle({
-						left: '0',
-						transition: {
-							duration: 150
-						}
-					});
-					break;
-				case 'menu-move':
-					//主窗体开始侧滑；
-					menu.setStyle({
-						left: '-70%',
-						transition: {
-							duration: 150
-						}
-					});
-					break;
-				case 'all-move':
-					//主窗体开始侧滑；
-					main.setStyle({
-						left: '0',
-						transition: {
-							duration: 150
-						}
-					});
-					//menu页面同时移动
-					menu.setStyle({
-						left: '-70%',
-						transition: {
-							duration: 150
-						}
-					});
-					
-					break;
-			}
-			
-			//等窗体动画结束后，隐藏菜单webview，节省资源；
-			setTimeout(function() {
-				menu.hide();
-			}, 200);
-			//改变标志位
-			showMenu = false;
-		}
-	}
-	
-	//变换侧滑动画移动效果；
-	mui('.mui-input-group').on('change', 'input', function() {
-		if (this.checked) {
-			switch (this.value) {
-				case 'main-move':
-					//仅主窗口移动的时候，menu页面的zindex值要低一点；
-					menu.setStyle({left:'0',zindex:9997});
-					if(mode=='all-move'){
-						menu.setStyle({
-							left: '0%'
-						});
+			 //敲击顶部导航，内容区回到顶部
+			document.querySelector('header').addEventListener('doubletap', function() {
+				main.children()[0].evalJS('mui.scrollTo(0, 100)');
+			});
+			 //主界面向右滑动，若菜单未显示，则显示菜单；否则不做任何操作
+			window.addEventListener("swiperight", openMenu);
+			 //主界面向左滑动，若菜单已显示，则关闭菜单；否则，不做任何操作；
+			window.addEventListener("swipeleft", closeMenu);
+			 //侧滑菜单触发关闭菜单命令
+			window.addEventListener("menu:close", closeMenu);
+			window.addEventListener("menu:open", openMenu);
+			 //重写mui.menu方法，Android版本menu按键按下可自动打开、关闭侧滑菜单；
+			mui.menu = function() {
+					if (showMenu) {
+						closeMenu();
+					} else {
+						openMenu();
 					}
-					mode = 'main-move';
-					break;
-				case 'menu-move':
-					menu.setStyle({left:'-70%',zindex:9999});
-					if(mode=='all-move'){
-						menu.setStyle({
-							left: '0%'
-						});
-					}
-					mode = 'menu-move';
-					break;
-				case 'all-move':
-					//切换为整体移动
-					//首先改变移动标志
-					slideTogether = true;
-					//变换menu界面初始化位置，整体移动时，Menu界面left需要在-70%的地方；
-					menu.setStyle({
-						left: '-70%'
+				}
+				//处理右上角关于图标的点击事件；
+			var subWebview = null,
+				template = null;
+			document.getElementById('info').addEventListener('tap', function() {
+				if (subWebview == null) {
+					//获取共用父窗体
+					template = plus.webview.getWebviewById("default-main");
+				}
+				if (template) {
+					subWebview = template.children()[0];
+					subWebview.loadURL('examples/info.html');
+					//修改共用父模板的标题
+					mui.fire(template, 'updateHeader', {
+						title: '关于',
+						showMenu: false
 					});
-					mode = 'all-move';
-					break;
-			}
-		}
-	});
-
-	 //点击左上角图标，打开侧滑菜单；
-	document.querySelector('.mui-icon-bars').addEventListener('tap', openMenu);
-	 //在android4.4中的swipe事件，需要preventDefault一下，否则触发不正常
-	 //故，在dragleft，dragright中preventDefault
-	window.addEventListener('dragright', function(e) {
-		e.detail.gesture.preventDefault();
-	});
-	window.addEventListener('dragleft', function(e) {
-		e.detail.gesture.preventDefault();
-	});
-	 //主界面向右滑动，若菜单未显示，则显示菜单；否则不做任何操作；
-	window.addEventListener("swiperight", openMenu);
-	 //主界面向左滑动，若菜单已显示，则关闭菜单；否则，不做任何操作；
-	window.addEventListener("swipeleft", closeMenu);
-	 //menu页面向左滑动，关闭菜单；
-	window.addEventListener("menu:swipeleft", closeMenu);
-
-	//重写mui.menu方法，Android版本menu按键按下可自动打开、关闭侧滑菜单；
-	mui.menu = function() {
-		if (showMenu) {
-			closeMenu();
-		} else {
-			openMenu();
-		}
-	}
-	
-	
-	/**
-	 * 打开子页面
-	 */
-	
-	document.getElementById('usercenter').addEventListener('tap', function() {
-		//打开关于页面注册页面
-	  	mui.openWindow({
-	    	url: 'register.html', 
-	    	id:'register'
-	  	});
-	});
-    	
-</script>
+					template.show('slide-in-right', 150);
+				}
+			});
+			 //首页返回键处理
+			 //处理逻辑：1秒内，连续两次按返回键，则退出应用；
+			var first = null;
+			mui.back = function() {
+				if (showMenu) {
+					closeMenu();
+				} else {
+					//首次按键，提示‘再按一次退出应用’
+					if (!first) {
+						first = new Date().getTime();
+						mui.toast('再按一次退出应用');
+						setTimeout(function() {
+							first = null;
+						}, 1000);
+					} else {
+						if (new Date().getTime() - first < 1000) {
+							plus.runtime.quit();
+						}
+					}
+				}
+			};
+		</script>
 </body>
 </html>

@@ -118,6 +118,8 @@
 			"apple": {
 				"appid": "",/*iOS必选，苹果开发网站申请的appid，如com.dheaven.hbuilder*/
 				"mobileprovision": "",/*iOS必选，打包配置文件*/
+				"UIStatusBarStyle": "UIStatusBarStyleBlackOpaque",/*IOS 配置系统状态栏样式*/
+				"StatusBarBackground": "#019FE6",/*设置系统状态栏背景颜色*/
 				"password": "",/*iOS必选，导入配置文件密码*/
 				"p12": "",/*iOS必选，打包配置文件关联的个人证书*/
 				"devices": "universal",/*iphone，可取值iphone/ipad/universal*/

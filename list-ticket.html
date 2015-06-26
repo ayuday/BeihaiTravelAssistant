@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>门票列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/mui.min.css">
+<!--测试阶段引入-->
+<!--<link rel="stylesheet" href="//at.alicdn.com/t/font_1433928066_1251507.css" media="all" />-->
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+<style>
+.mui-backdrop{z-index: 20;}
+.screenbar,.ayu-nav{z-index: 22;}
+.mui-control-content,#downpan{max-height: 350px;}
+#item1{height: 344px;background-color: #fff;margin-bottom: 6px;}
+</style>
+</head>
+<body>
+
+
+<header class="mui-bar mui-bar-nav ayu-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">北海景点门票</h1>
+</header>
+<div class="mui-bar-nav screenbar">
+	<ul class="tab mui-segmented-control" >
+		<li class="mui-col-xs-6" id="drop-menu-dsc"><a href="#item1" class="mui-control-item">景点分类<span class="iconfont icon-jiantouxia"></span></a></li>
+		<li class="mui-col-xs-6" id="drop-menu-day"><a href="#item2" class="mui-control-item">推荐排序<span class="iconfont icon-jiantouxia"></span></a></li>
+	</ul>
+</div>
+<!--下拉列表-->
+	
+	<div id="item1" class="mui-control-content ayu-item-position">
+		<div class="mui-scroll-drop mui-scroll-wrapper">
+		<ul class="drop-list mui-scroll">
+			<li><a href="#"><span class="iconfont icon-zhengque"></span>不限</a></li>
+			<li><a href="#"><span class="iconfont"></span>动植物园</a></li>
+			<li><a href="#"><span class="iconfont"></span>公园</a></li>
+			<li><a href="#"><span class="iconfont"></span>海洋馆</a></li>
+			<li><a href="#"><span class="iconfont"></span>博物馆</a></li>
+			<li><a href="#"><span class="iconfont"></span>体验馆</a></li>
+			<li><a href="#"><span class="iconfont"></span>漂流</a></li>
+			<li><a href="#"><span class="iconfont"></span>寺庙</a></li>
+		</ul>
+		</div>
+		<div class="drop-down-bg" style="height: 6px;position: absolute;bottom: -6px;width: 100%;"></div>
+	</div>
+	<div id="item2" class="mui-control-content drop-down-bg ayu-item-position">
+		<ul class="drop-list">
+			<li><a href="#"><span class="iconfont"></span>离我最近</a></li>
+			<li><a href="#"><span class="iconfont"></span>人气最高</a></li>
+		</ul>
+	</div>
+<!--end下拉列表-->
+
+<div id="pullrefresh" class="mui-content list-content mui-scroll-wrapper">
+	<div class="list-wrap product-list ayu-nbg-list mui-scroll" >
+		<ul class="ayu-imgtxt-view ayu-ticket-view" id="list">
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">学生票</span>
+							</a>
+						</li>
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">老人票</span>
+							</a>
+						</li>
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">市民票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="article-ticket.html">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="article-ticket.html">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--end mui-content-->
+
+
+<script src="js/mui.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/comm.js"></script>
+<script>
+	mui.init({
+		swipeBack: false,
+		//下拉刷新
+		pullRefresh: {
+			container: '#pullrefresh',//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+			down: {
+				contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+				callback: pulldownRefresh//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+			},
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	
+	
+	//主列表点击事件
+		var aniShow = "pop-in";
+		//只有ios支持的功能需要在Android平台隐藏；
+		if (mui.os.android) {
+			var list = document.querySelectorAll('.ios-only');
+			if (list) {
+				for (var i = 0; i < list.length; i++) {
+					list[i].style.display = 'none';
+				}
+			}
+			//Android平台暂时使用slide-in-right动画
+			aniShow = "slide-in-right"
+		}
+		mui('#list').on('tap', 'a', function() {
+			var id = this.getAttribute('href');
+			var href = this.href;
+			var type = this.getAttribute("open-type");
+			//不使用父子模板方案的页面
+			if (type == "common") {
+				var webview_style = {
+					popGesture: "close"
+				};
+				//侧滑菜单需动态控制一下zindex值；
+				if (~id.indexOf('offcanvas-')) {
+					webview_style.zindex = 9998;
+					webview_style.popGesture = ~id.indexOf('offcanvas-with-right') ? "close" : "none";
+				}
+				mui.openWindow({
+					id: id,
+					url: this.href,
+					styles: webview_style,
+					show: {
+						aniShow: aniShow
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			} else if (id && ~id.indexOf('.html')) {
+				if (!~id.indexOf('popovers.html')&&!~id.indexOf('tab-with-viewpagerindicator.html') && mui.os.ios) {
+					mui.openWindow({
+						id: id,
+						url: this.href,
+						styles: {
+							popGesture: 'close'
+						},
+						show: {
+							aniShow: aniShow
+						},
+						waiting: {
+							autoShow: false
+						}
+					});
+				} else {
+					//TODO  by chb 当初这么设计，是为了一个App中有多个模板，目前仅有一个模板的情况下，实际上无需这么复杂
+					//使用父子模板方案打开的页面
+					//获得共用模板组
+					var template = getTemplate('default');
+					//判断是否显示右上角menu图标；
+					var showMenu = ~href.indexOf('popovers.html') ? true : false;
+					//获得共用父模板
+					var headerWebview = template.header;
+					//获得共用子webview
+					var contentWebview = template.content;
+					var title = this.innerText.trim();
+					//通知模板修改标题，并显示隐藏右上角图标；
+					mui.fire(headerWebview, 'updateHeader', {
+						title: title,
+						showMenu: showMenu
+					});
+					
+					var reload = true;
+					if (!template.loaded) {
+						if (contentWebview.getURL() != this.href) {
+							contentWebview.loadURL(this.href);
+						} else {
+							reload = false;
+						}
+					} else {
+						reload = false;
+					}
+					(!reload) && contentWebview.show();
+					
+					headerWebview.show(aniShow, 150);
+				}
+			}
+		});
+		
+	
+	
+	
+	/**
+	 * 下拉刷新具体业务实现
+	 */
+	function pulldownRefresh() {
+		setTimeout(function() {
+			var table = document.body.querySelector('.ayu-imgtxt-view');
+			var cells = document.body.querySelectorAll('li');
+			for (var i = cells.length, len = i + 6; i < len; i++) {
+				var li = document.createElement('li');
+				li.innerHTML ='<li><div class="item"><a href="#"><div class="img"><img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg"></div><div class="text"><h5>北海海洋之窗(5A)'+ (i + 1) + '</h5><p>你来或不来精彩就在这里！</p><p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p></div></a><ul class="tecket-price"><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li></ul></div></li>';
+					
+				
+				//下拉刷新，新纪录插到最前面；
+				table.insertBefore(li, table.firstChild);
+			}
+			//注意，加载完新数据后，必须执行如下代码，注意：若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+		}, 1000);
+	}
+	var count = 0;
+	/**
+	 * 上拉加载具体业务实现
+	 */
+	function pullupRefresh() {
+		setTimeout(function() {
+			//注意，加载完新数据后，必须执行如下代码，true表示没有更多数据了，两个注意事项：
+		     //1、若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+		     //2、注意this的作用域，若存在匿名函数，需将this复制后使用，参考hello mui中的代码示
+			mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+			var table = document.body.querySelector('.ayu-imgtxt-view');
+			var cells = document.body.querySelectorAll('li');
+			for (var i = cells.length, len = i + 10; i < len; i++) {
+				var li = document.createElement('li');
+				li.innerHTML ='<li><div class="item"><a href="#"><div class="img"><img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg"></div><div class="text"><h5>北海海洋之窗(5A)'+ (i + 1) + '</h5><p>你来或不来精彩就在这里！</p><p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p></div></a><ul class="tecket-price"><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li></ul></div></li>';
+				table.appendChild(li);
+			}
+		}, 1000);
+	}
+	
+	
+	;(function($){
+		mui('.mui-scroll-drop').scroll({
+			indicators: true //是否显示滚动条
+		});
+		
+		
+		
+		
+		//下拉筛选分类
+		$('.tab').on('tap', 'a', function(e) {
+			mask.show();//显示遮罩
+		});
+		var mask = mui.createMask(colse);//callback为用户点击蒙版时自动执行的回调；
+		//关闭下拉菜单
+		function colse(){
+			$('body .mui-active').removeClass('mui-active');
+		}
+		
+		//下拉菜单筛选点击业务
+		$('.drop-list').on('tap', 'a', function(){
+			mask.close();
+			ayu_loading.show();
+			//ajax加载数据
+			mui.post('http://xxx/login.php',{
+					username:'username',
+					password:'password'
+				},function(data){
+					//服务器返回响应
+					if (data) {
+						ayu_loading.hide();//关闭加载图标
+					} else{
+						
+					}
+				},'json'
+			);
+		});
+		
+	})(Zepto)
+</script>
+</body>
+</html>

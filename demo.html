@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<title>演示页面</title>
 	<style>
-		.iphone{background: url('images/device-sprite.png') 0 0 no-repeat;background-size: 100%;width: 395px;  height: 813px;position: relative;}
-		body{position: relative;overflow: hidden;}
+		.iphone{background: url('images/device-sprite.png') 0 0 no-repeat;background-size: 100%;width: 395px;  height: 813px;position: relative; float: left;}
+		body{position: relative;overflow: hidden;font-size: 12px}
 		.iphonebox{width:320px;height: 570px;position: absolute;top: 116px;left: 37px;overflow:hidden;zoom:1}
-		.list{position: absolute;top:50px;left: 500px}
+		.list{/*position: absolute;top:50px;left: 500px;*/float:left;margin-left:80px;height: 800px;overflow-y:auto;display: block;}
 		.list li{line-height: 30px}
 /*滚动条*/
 ::-webkit-scrollbar{width:2px;height:12px}
@@ -23,13 +23,35 @@
 <body>
 	<div class="iphone">
 		<div class="iphonebox">
-			<iframe src="index.html" width="318" height="570"></iframe>
+			<iframe src="index.html" id="main" name="main" width="318" height="570"></iframe>
 		</div>
 	</div>
 	<ul class="list">
-		<li><a href="index.html" target="main">首页</a></li>
-		<li><a href="cart.html" target="main">购物车</a>(含js业务数量增加，减小，删除，价格统计方法,ajax业务逻辑框架)</li>
-		<li><a href="cart.html" target="main">列表</a>(含手机手势上拉刷新数据，上拉加载数据，弹出层菜单筛选，jax业务逻辑)</li>
+	<p style="color:#f00">浏览方法：chrome浏览器或360极速浏览器 按F12 ，点<img src="images/chrome.png" alt="">打开手机模式,再F5刷新(注：有些效果方法需在app才支持)</p>
+		<li><a href="index.html" target="main">首页</a>(后期待完善修改)</li>
+		<!-- <li><a href="cart.html" target="main">购物车</a></li> -->
+		<li><a href="cart.html" target="_blank">购物车</a>(含js业务数量增加，减少，删除，价格统计方法,ajax业务逻辑框架)</li>
+		<li><a href="goods.html" target="_blank">商品详情</a>(含js业务数量增加，减少，删除，价格统计方法,ajax业务逻辑框架)</li>
+		<li><a href="list-view.html" target="_blank">线路列表</a>(含手机手势上拉刷新数据，上拉加载数据，弹出层菜单筛选，jax业务逻辑)</li>
+		<li><a href="register.html" target="_blank">用户注册</a></li>
+		<li><a href="list-ticket.html" target="_blank">门票列表</a></li>
+		<li>门票详情(酝酿中...)</li>
+		<li>酒店列表(酝酿中...)</li>
+		<li>酒店详情(酝酿中...)</li>
+		<li>攻略列表(酝酿中...)</li>
+		<li>攻略详情(酝酿中...)</li>
+		<li>用户中心(酝酿中...)</li>
+		<li>用户评价(酝酿中...)</li>
+		<li>预订页面(酝酿中...)</li>
+		<li>搜索页面(酝酿中...)</li>
+		<li>图片展示(酝酿中...)</li>
+		<li>图片列表(酝酿中...)</li>
+		<li>视频展示(酝酿中...)</li>
+		<li>视频列表(酝酿中...)</li>
+		<li>其他页面(酝酿中...)</li>
+		<li>页面手机特效(酝酿中...)</li>
+		<li>各手机 ipad平板兼容调试(酝酿中...)</li>
+		<li>...</li>
 	</ul>
 </body>
 </html>

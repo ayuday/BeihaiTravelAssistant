@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>门票列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/mui.min.css">
+<!--测试阶段引入-->
+<!--<link rel="stylesheet" href="//at.alicdn.com/t/font_1433928066_1251507.css" media="all" />-->
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+<style>
+.mui-backdrop{z-index: 20;}
+.screenbar,.ayu-nav{z-index: 22;}
+.mui-control-content,#downpan{max-height: 350px;}
+.mui-input-row.mui-input-range{padding-right: 0;}
+#item1 li{position: relative;}
+</style>
+
+</head>
+<body>
+
+
+<header class="mui-bar mui-bar-nav ayu-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">北海景点门票</h1>
+</header>
+<div class="mui-bar-nav screenbar">
+	<ul class="tab mui-segmented-control" >
+		<li class="mui-col-xs-6" ><a href="#item1" class="mui-control-item">价格筛选<span class="iconfont icon-jiantouxia"></span></a></li>
+		<li class="mui-col-xs-6" id="drop-menu-day"><a href="#item2" class="mui-control-item">星级筛选<span class="iconfont icon-jiantouxia"></span></a></li>
+	</ul>
+</div>
+<!--下拉列表-->
+	
+	<div id="item1" class="mui-control-content drop-down-bg ayu-item-position">
+		<ul class="drop-list">
+			<li><a href="#"><span class="iconfont icon-zhengque"></span>不限</a></li>
+			<li><a href="#"><span class="iconfont"></span>0-150元</a></li>
+			<li><a href="#"><span class="iconfont"></span>150-300元</a></li>
+			<li><a href="#"><span class="iconfont"></span>300-600元</a></li>
+			<li><a href="#"><span class="iconfont"></span>600元以上</a></li>
+		</ul>
+	</div>
+	
+	<div id="item2" class="mui-control-content drop-down-bg ayu-item-position">
+		<ul class="drop-list">
+			<li><a href="#"><span class="iconfont icon-zhengque"></span>不限</a></li>
+			<li><a href="#"><span class="iconfont"></span>经济/客栈</a></li>
+			<li><a href="#"><span class="iconfont"></span>四星/高档</a></li>
+			<li><a href="#"><span class="iconfont"></span>五星/豪华</a></li>
+		</ul>
+	</div>
+	
+<!--end下拉列表-->
+<div id="pullrefresh" class="mui-content list-content mui-scroll-wrapper">
+	<div class="list-wrap product-list ayu-nbg-list mui-scroll" >
+		<ul class="ayu-imgtxt-view ayu-ticket-view">
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">学生票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">老人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">市民票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="item">
+					<a href="#">
+					<div class="img">
+					<img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg">	
+					</div>
+					<div class="text">
+						<h5>北海海洋之窗(5A)</h5>
+						<p>你来或不来精彩就在这里！</p>
+						<p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p>
+					</div>
+					</a>
+					<ul class="tecket-price">
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+						<li><a href="#">
+							<span class="price">¥<em>134</em><dfn class="del">210</dfn></span>
+							<span class="tit">成人票</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--end mui-content-->
+
+
+<script src="js/mui.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/comm.js"></script>
+<script>
+	mui.init({
+		swipeBack: false,
+		//下拉刷新
+		pullRefresh: {
+			container: '#pullrefresh',//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+			down: {
+				contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+      			contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+				callback: pulldownRefresh//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+			},
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	
+	/**
+	 * 下拉刷新具体业务实现
+	 */
+	function pulldownRefresh() {
+		setTimeout(function() {
+			var table = document.body.querySelector('.ayu-imgtxt-view');
+			var cells = document.body.querySelectorAll('li');
+			for (var i = cells.length, len = i + 6; i < len; i++) {
+				var li = document.createElement('li');
+				li.innerHTML ='<li><div class="item"><a href="#"><div class="img"><img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg"></div><div class="text"><h5>北海海洋之窗(5A)'+ (i + 1) + '</h5><p>你来或不来精彩就在这里！</p><p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p></div></a><ul class="tecket-price"><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li></ul></div></li>';
+					
+				
+				//下拉刷新，新纪录插到最前面；
+				table.insertBefore(li, table.firstChild);
+			}
+			//注意，加载完新数据后，必须执行如下代码，注意：若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+			mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+		}, 1000);
+	}
+	var count = 0;
+	/**
+	 * 上拉加载具体业务实现
+	 */
+	function pullupRefresh() {
+		setTimeout(function() {
+			//注意，加载完新数据后，必须执行如下代码，true表示没有更多数据了，两个注意事项：
+		     //1、若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+		     //2、注意this的作用域，若存在匿名函数，需将this复制后使用，参考hello mui中的代码示
+			mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+			var table = document.body.querySelector('.ayu-imgtxt-view');
+			var cells = document.body.querySelectorAll('li');
+			for (var i = cells.length, len = i + 10; i < len; i++) {
+				var li = document.createElement('li');
+				li.innerHTML ='<li><div class="item"><a href="#"><div class="img"><img  src="http://7xjffi.com1.z0.glb.clouddn.com/topimg-400x300.jpg"></div><div class="text"><h5>北海海洋之窗(5A)'+ (i + 1) + '</h5><p>你来或不来精彩就在这里！</p><p class="address"><span class="iconfont icon-address"></span>北海市海城区北京路110号</p></div></a><ul class="tecket-price"><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li><li><a href="#"><span class="price">¥<em>134</em><dfn class="del">210</dfn></span><span class="tit">成人票</span></a></li></ul></div></li>';
+				table.appendChild(li);
+			}
+		}, 1000);
+	}
+	
+	
+	;(function($){
+		mui('.mui-scroll-drop').scroll({
+			indicators: true //是否显示滚动条
+		});
+		//下拉筛选分类
+		$('.tab').on('tap', 'a', function(e) {
+			mask.show();//显示遮罩
+		});
+		var mask = mui.createMask(colse);//callback为用户点击蒙版时自动执行的回调；
+		//关闭下拉菜单
+		function colse(){
+			$('body .mui-active').removeClass('mui-active');
+		}
+		
+		//下拉菜单筛选点击业务
+		$('.drop-list').on('tap', 'a', function(){
+			mask.close();
+			ayu_loading.show();
+			
+			//ajax加载数据
+			mui.post('http://xxx/login.php',{
+					username:'username',
+					password:'password'
+				},function(data){
+					//服务器返回响应
+					if (data) {
+						ayu_loading.hide();//关闭加载图标
+					} else{
+						
+					}
+				},'json'
+			);
+		});
+		
+	})(Zepto)
+	
+	
+</script>
+</body>
+</html>

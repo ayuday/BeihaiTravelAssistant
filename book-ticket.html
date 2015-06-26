@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单填写</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/mui.min.css">
+<!--测试阶段引入-->
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1433842913_0296226.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+
+</head>
+<body>
+<header class="mui-bar mui-bar-nav ayu-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">订单填写</h1>
+</header>
+
+<div class="mui-content">
+<form class="mui-input-group">
+	<input type="hidden" name="price" id="price" value="200" />
+	<div class="booktitle">
+		北海海洋之窗-学生票
+		<div class="attention">
+			请在预订日期之前游览，过期无效
+		</div>
+	</div>
+	<div class="box titlebox">
+		<div class="box-tit">联系信息</div>
+		<div class="bookinfo">
+			
+				<div class="mui-input-row">
+					<label>游玩日期</label>
+					<input type="text" id="date" name="date"  placeholder="请选择游玩日期"/>
+				</div>
+				<div class="mui-input-row">
+					<label>数量</label>
+					<input type="text" id="num" placeholder="选择购物数量">
+				</div>
+				<div class="mui-input-row">
+					<label>联系人</label>
+					<input type="text" placeholder="普通输入框">
+				</div>
+				<div class="mui-input-row">
+					<label>手机号</label>
+					<input type="text" placeholder="取票人手机号">
+				</div>
+			
+		</div>
+	</div>
+	
+	<div class="bookpay">
+		在线支付
+		<span class="payprice">¥<em class="price" id="totalprice">200</em></span>
+		<input type="submit" class="bookbtn" value="提交订单"/>
+	</div>
+</form>
+</div>
+<!--end mui-content-->
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!--mobiscroll日期插件-->
+<link rel="stylesheet" href="css/mobiscroll.custom-2.16.0.min.css" type="text/css" />
+<script src="js/mobiscroll.custom-2.16.0.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: true,
+	});
+	
+</script>
+<script type="text/javascript">
+    $(function () {
+        // Mobiscroll Calendar initialization
+        $('#date').mobiscroll().calendar({
+            theme: 'mobiscroll',  
+            lang: 'zh',
+            display: 'bottom',    
+            navigation: 'month',  
+            months: 'auto'        
+            
+        });
+        
+        
+    	$('#num').mobiscroll().number({
+	        theme: 'mobiscroll',
+	        display: 'bottom',
+	        layout: 'fixed',
+	        lang: 'zh',
+	        step: 1,
+	        min: 1,
+	        max: 50,
+	        fixedWidth: 150
+    	});
+    	
+    	$('#num').change(function(){
+    		var num = $(this).val();
+    		var myprice = $('#price').val();
+	    	var totalprice = myprice*num;
+	    	$('#totalprice').text(totalprice);
+	    	console.log(myprice);
+    	})
+    	
+    	    
+    });
+</script>	
+</body>
+</html>
